@@ -1,24 +1,29 @@
 import React, { useState } from "react";
 
 const UseStateObject = () => {
-  const [user, setUser] = useState({
-    name: "Alex",
-    age: 25,
+  const [person, setPerson] = useState({
+    name: "peter",
+    age: 24,
     message: "random message",
   });
 
+  // const [name,setName] = useState('peter')
+  // const [age,setAge] = useState(24)
+  // const [message,setMessage] = useState('random message')
+
   const changeMessage = () => {
-    setUser({ ...user, message: "Hello World" });
+    setPerson({ ...person, message: "hello world" });
+    // setMessage('hello world')
   };
+
   return (
     <>
-      <h1>{user.name}</h1>
-      <h2> {user.age}</h2>
-      <h3>{user.message}</h3>
-      <button type="button" onClick={changeMessage}>
-        Change Message
+      <h3>{person.name}</h3>
+      <h3>{person.age}</h3>
+      <h4>{person.message}</h4>
+      <button className="btn" onClick={changeMessage}>
+        change message
       </button>
-      {console.log(user)}
     </>
   );
 };

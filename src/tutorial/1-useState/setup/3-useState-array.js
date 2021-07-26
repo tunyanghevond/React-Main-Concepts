@@ -1,31 +1,27 @@
 import React from "react";
 import { data } from "../../../data";
-
 const UseStateArray = () => {
-  const [users, setUser] = React.useState(data);
+  const [people, setPeople] = React.useState(data);
 
-  const remuveElement = (id) => {
-    const newUser = users.filter((el) => el.id !== id);
-    setUser(newUser);
+  const removeItem = (id) => {
+    let newPeople = people.filter((person) => person.id !== id);
+    setPeople(newPeople);
   };
-
   return (
-    <div>
-      {users.map((user) => {
-        const { name, id } = user;
+    <>
+      {people.map((person) => {
+        const { id, name } = person;
         return (
           <div key={id} className="item">
             <h4>{name}</h4>
-            <button type="button" onClick={() => remuveElement(id)}>
-              Delate
-            </button>
+            <button onClick={() => removeItem(id)}>remove</button>
           </div>
         );
       })}
-      <button type="button" onClick={() => setUser([])}>
-        Delate All
+      <button className="btn" onClick={() => setPeople([])}>
+        clear items
       </button>
-    </div>
+    </>
   );
 };
 
