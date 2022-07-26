@@ -11,18 +11,18 @@ const UseStateBasics = () => {
   // console.log(value, handler);
 
   const [text, setText] = useState("random title");
-  const handleClick = () => {
-    if (text === "random title") {
-      setText("hello world");
-    } else {
-      setText("random title");
-    }
-  };
-
+  // const handleClick = () => {
+  //   if (text === "random title") {
+  //     setText("hello world");
+  //   } else {
+  //     setText("random title");
+  //   }
+  // };
+  // onClick={handleClick}
   return (
     <React.Fragment>
       <h1>{text}</h1>
-      <button type="button" className="btn" onClick={handleClick}>
+      <button type="button" className="btn" >
         change title
       </button>
     </React.Fragment>
