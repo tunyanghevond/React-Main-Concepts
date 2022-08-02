@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react'
+import Index from './tutorial/useState/2-useState-basics'
 
-import Setup from "./tutorial/11-react-router/setup";
 function App() {
   return (
-    <div className="container">
-      <h2>Advanced Tutorial</h2>
-      <Setup />
+    <div className='container'>
+      <Index />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
