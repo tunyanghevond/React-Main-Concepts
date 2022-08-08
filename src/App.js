@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from './tutorial/useState/4-useState-object'
+import Index from './tutorial/useEffect/3-useEffect-fetch-data'
 
 function App() {
   return (
