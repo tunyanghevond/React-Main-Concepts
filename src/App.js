@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from './tutorial/useEffect/3-useEffect-fetch-data'
+import Index from './tutorial/conditional-rendering/3-show-hide'
 
 function App() {
   return (
