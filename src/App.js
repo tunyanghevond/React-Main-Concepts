@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from './tutorial/conditional-rendering/3-show-hide'
+import Index from './tutorial/forms/2-multiple-inputs'
 
 function App() {
   return (
